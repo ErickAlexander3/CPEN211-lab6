@@ -33,7 +33,6 @@ module regfile_tb();
 		$display("currently at 30ps");
 
 
-
 		//checking the output at other registers
 		sim_readnum = 3'b001; //read from register1
 		#10;

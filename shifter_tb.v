@@ -17,8 +17,6 @@ module shifter_tb();
 			$display("1010101010101010 unchanged: we get %b, expecting 1010101010101010", sim_out);
 
 
-
-
 			//try shifting to the left
 			sim_in = 16'b1111111111111111; //initialize the input
 			sim_shift = 2'b01; //we want to shift left 1 bit
@@ -29,9 +27,7 @@ module shifter_tb();
 			sim_in = 16'b1010101010101010; //initialize the input
 			sim_shift = 2'b01; //we want to shift left 1 bit
 			#10; //wait for 10 ps
-			$display("1010101010101010 shifting left 1 bit: we get %b, expecting 0101010101010100", sim_out);
-
-			
+			$display("1010101010101010 shifting left 1 bit: we get %b, expecting 0101010101010100", sim_out);			
 
 
 			//try shifting to the right
@@ -45,10 +41,7 @@ module shifter_tb();
 			sim_shift = 2'b10; //we want to shift right 1 bit
 			#10; //wait for 10 ps
 			$display("1010101010101010 shifting right 1 bit: we get %b, expecting 0101010101010101", sim_out);
-
-
 			
-
 
 			//try shifting right and copy MSB
 			sim_in = 16'b1010101010101010; //initialize the input
