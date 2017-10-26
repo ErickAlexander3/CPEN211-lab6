@@ -17,7 +17,7 @@ module datapath(clk, //clock controlling datapath
    //1) The register file contains the 8 register where you can store up to 8 16-bits values
    wire [15:0] reg_data_in;  //This will be obtained from the output of part 10 (defined later)
    wire [15:0] reg_data_out;
-   Register_file register_block(clk, reg_data_in, write, writenum, readnum, reg_data_out);
+   Register_file REGFILE(clk, reg_data_in, write, writenum, readnum, reg_data_out);
 
    //2) The output of the register file is then used in either of the two load-enabled pipeline registers after it
    wire [15:0] pipeline_reg_A_out, pipeline_reg_B_out;
