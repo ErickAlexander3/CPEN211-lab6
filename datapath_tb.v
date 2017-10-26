@@ -178,7 +178,7 @@ module datapath_tb();
 
 		//test when there is overflow
 		MOV(`R7, 16'b1000000000000001);
-		OPERATION(`R0, `R7, `R7, `SUM, `UNCHANGED, 16'b00000000000000010, 3'b100); //value can't be stored in 16 bits
+		OPERATION(`R0, `R7, `R7, `SUM, `UNCHANGED, 16'b0000000000000010, 3'b100); //value can't be stored in 16 bits
 
                 if(!error) $display("ALL TESTS PASSED");
 		$stop; //break out

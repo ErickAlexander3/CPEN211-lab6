@@ -9,7 +9,7 @@ z2
 cModel Technology
 dC:/Users/alexlee/CPEN 211 Labs/lab 4
 vALU
-Z0 !s110 1509025166
+Z0 !s110 1509058714
 !i10b 1
 !s100 SBMnfR`cIJUe9TT_?aN=81
 IVi4R7C1;AgRae@8a3>g<o1
@@ -23,7 +23,7 @@ Z6 OV;L;10.3d;59
 r1
 !s85 0
 31
-Z7 !s108 1509025166.242000
+Z7 !s108 1509058714.640000
 Z8 !s107 C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/ALU.v|
 Z9 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/ALU.v|
 !i113 1
@@ -86,55 +86,55 @@ R6
 r1
 !s85 0
 31
-!s108 1509025166.304000
+!s108 1509058714.765000
 !s107 C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/ALU_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/ALU_tb.v|
 !i113 1
 R10
 n@a@l@u_tb
 vController
-R0
+Z12 !s110 1509058715
 !i10b 1
 !s100 Aze>lMBXmHf4QI^YCQ<;K1
 IaM[4O:HAhlVbXniVAJC9R2
 R1
 R2
-Z12 w1509023954
-Z13 8C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/cpu.v
-Z14 FC:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/cpu.v
+Z13 w1509023954
+Z14 8C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/cpu.v
+Z15 FC:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/cpu.v
 L0 70
 R6
 r1
 !s85 0
 31
-Z15 !s108 1509025166.429000
-Z16 !s107 C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/cpu.v|
-Z17 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/cpu.v|
+Z16 !s108 1509058715.062000
+Z17 !s107 C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/cpu.v|
+Z18 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/cpu.v|
 !i113 1
 R10
 n@controller
 vcpu
-R0
+R12
 !i10b 1
 !s100 NGb=ES>De[JNll54Db<Zb1
 IkVVB_11H1dkbTWe7iN[1C0
 R1
 R2
-R12
 R13
 R14
+R15
 L0 4
 R6
 r1
 !s85 0
 31
-R15
 R16
 R17
+R18
 !i113 1
 R10
 vcpu_autograder_example_tb
-R0
+R12
 !i10b 1
 !s100 oPTPLbXUWCiVCO@g9c1Q>3
 IDYT:_F1`?cSN=Pf93F]8f2
@@ -148,33 +148,33 @@ R6
 r1
 !s85 0
 31
-!s108 1509025166.570000
+!s108 1509058715.390000
 !s107 C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/cpu_tb_autograder_example.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/cpu_tb_autograder_example.v|
 !i113 1
 R10
 vcpu_tb
-R0
+R12
 !i10b 1
-!s100 KLY8<A<h1CZLm55nFN4e_0
-IdH8Vf=JZTIhYOQ:gb[]9O1
+!s100 QQd:i>oXh>K71`H:4F;MD0
+I[PjzZzGYN8E5iR38>`ZZ[3
 R1
 R2
-w1509025164
-8C:\Users\alexlee\CPEN 211 Labs\CPEN211-lab6\cpu_tb.v
-FC:\Users\alexlee\CPEN 211 Labs\CPEN211-lab6\cpu_tb.v
+w1509058712
+8C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/cpu_tb.v
+FC:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/cpu_tb.v
 L0 1
 R6
 r1
 !s85 0
 31
-!s108 1509025166.507000
-!s107 C:\Users\alexlee\CPEN 211 Labs\CPEN211-lab6\cpu_tb.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:\Users\alexlee\CPEN 211 Labs\CPEN211-lab6\cpu_tb.v|
+!s108 1509058715.265000
+!s107 C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/cpu_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/cpu_tb.v|
 !i113 1
 R10
 vdatapath
-R0
+R12
 !i10b 1
 !s100 CM8?ekTg<Uan]m7;njInU1
 IkFF;CCF=5T0YTc_?eIoGL1
@@ -188,19 +188,19 @@ R6
 r1
 !s85 0
 31
-!s108 1509025166.632000
+!s108 1509058715.499000
 !s107 C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/datapath.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/datapath.v|
 !i113 1
 R10
 vdatapath_tb
-R0
+R12
 !i10b 1
-!s100 k[>UFBP?DRDk>kDP@GTcW1
-Inc5O_X>BJia0N3lCA>a2?2
+!s100 Fj_cB7^m]lVL`J7D`;OX71
+Iiizl08n8T15Be2YobVLi]1
 R1
 R2
-w1509023950
+w1509053713
 8C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/datapath_tb.v
 FC:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/datapath_tb.v
 L0 23
@@ -208,7 +208,7 @@ R6
 r1
 !s85 0
 31
-!s108 1509025166.695000
+!s108 1509058715.624000
 !s107 C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/datapath_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/datapath_tb.v|
 !i113 1
@@ -221,67 +221,67 @@ I_;_`5?J_eE;`HCCN::Q_Z1
 R1
 R2
 R3
-Z18 8C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/buildingblocks.v
-Z19 FC:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/buildingblocks.v
+Z19 8C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/buildingblocks.v
+Z20 FC:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/buildingblocks.v
 L0 22
 R6
 r1
 !s85 0
 31
-Z20 !s108 1509025166.367000
-Z21 !s107 C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/buildingblocks.v|
-Z22 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/buildingblocks.v|
+Z21 !s108 1509058714.906000
+Z22 !s107 C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/buildingblocks.v|
+Z23 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/buildingblocks.v|
 !i113 1
 R10
 n@decoder
 vinput_iface
-R0
+R12
 !i10b 1
 !s100 8SgM@8TG_;?zeKCKSLm2H1
 I6X]@n5OCcfojh4aMeT5?n3
 R1
 R2
-Z23 w1508996594
-Z24 8C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/lab6_top.v
-Z25 FC:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/lab6_top.v
+Z24 w1508996594
+Z25 8C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/lab6_top.v
+Z26 FC:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/lab6_top.v
 L0 76
 R6
 r1
 !s85 0
 31
-Z26 !s108 1509025166.757000
-Z27 !s107 C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/lab6_top.v|
-Z28 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/lab6_top.v|
+Z27 !s108 1509058715.783000
+Z28 !s107 C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/lab6_top.v|
+Z29 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/lab6_top.v|
 !i113 1
 R10
 vInst_dec
-R0
+R12
 !i10b 1
 !s100 ?C>0egQd?4=7aCPk:mGYQ1
 IKgL]fzECHTZnN29m7^<oJ2
 R1
 R2
-R12
 R13
 R14
-Z29 L0 35
+R15
+Z30 L0 35
 R6
 r1
 !s85 0
 31
-R15
 R16
 R17
+R18
 !i113 1
 R10
 n@inst_dec
 vlab5_top
-Z30 !s110 1508735829
+Z31 !s110 1508735829
 !i10b 1
 !s100 =j:FgMjCHK1iYD^BjBJzX3
 IdoEOhIGU3QAU0L4`:Y1EM0
 R1
-Z31 dC:/Users/erick/OneDrive/Documentos/UBC-DESKTOP-0RSMUVL/CPEN 211/lab6
+Z32 dC:/Users/erick/OneDrive/Documentos/UBC-DESKTOP-0RSMUVL/CPEN 211/lab6
 w1507608202
 8C:/Users/erick/OneDrive/Documentos/UBC-DESKTOP-0RSMUVL/CPEN 211/lab5/lab5_top.v
 FC:/Users/erick/OneDrive/Documentos/UBC-DESKTOP-0RSMUVL/CPEN 211/lab5/lab5_top.v
@@ -297,14 +297,14 @@ r1
 R10
 vlab5_top_tb
 DXx6 sv_std 3 std 0 22 <EOTafDcUY:cQeO^ICn]m3
-R30
+R31
 !i10b 1
 !s100 njANKBKND3d;G78dZb`0Y1
 I9UZc:QC7l_9[fIXAEfH6W0
 R1
 !s105 lab5_top_tb_sv_unit
 S1
-R31
+R32
 w1507594885
 8C:/Users/erick/OneDrive/Documentos/UBC-DESKTOP-0RSMUVL/CPEN 211/lab5/lab5_top_tb.sv
 FC:/Users/erick/OneDrive/Documentos/UBC-DESKTOP-0RSMUVL/CPEN 211/lab5/lab5_top_tb.sv
@@ -319,23 +319,23 @@ r1
 !i113 1
 o-work work -sv
 vlab6_top
-R0
+R12
 !i10b 1
 !s100 6`1F>SmZ`NQ>?FGgGnkdL1
 I9j3om@WYcm_U<Pz9FZI6G1
 R1
 R2
-R23
 R24
 R25
+R26
 R11
 R6
 r1
 !s85 0
 31
-R26
 R27
 R28
+R29
 !i113 1
 R10
 vLoad_enabled_register
@@ -346,16 +346,16 @@ IBjBY=9coR1UB=78eXikPC1
 R1
 R2
 R3
-R18
 R19
+R20
 L0 3
 R6
 r1
 !s85 0
 31
-R20
 R21
 R22
+R23
 !i113 1
 R10
 n@load_enabled_register
@@ -388,16 +388,16 @@ IDhjb92V^^@G@NOiJ]T<ed1
 R1
 R2
 R3
-R18
 R19
-R29
+R20
+R30
 R6
 r1
 !s85 0
 31
-R20
 R21
 R22
+R23
 !i113 1
 R10
 n@m@u@x_2in_binary
@@ -409,16 +409,16 @@ IF7TJ<mB;?kg9S6HoQbE[[1
 R1
 R2
 R3
-R18
 R19
+R20
 L0 52
 R6
 r1
 !s85 0
 31
-R20
 R21
 R22
+R23
 !i113 1
 R10
 n@m@u@x_4in_binary
@@ -430,21 +430,21 @@ IRD:NHa_9N>3RIPcb7O_SZ3
 R1
 R2
 R3
-R18
 R19
+R20
 L0 73
 R6
 r1
 !s85 0
 31
-R20
 R21
 R22
+R23
 !i113 1
 R10
 n@m@u@x_8in
 vregfile_tb
-R0
+Z33 !s110 1509058716
 !i10b 1
 !s100 TgG8Ln2iSX8TlcN4QYOR?0
 IbX6Nk[PgJ8Qd9bRIRWWRd2
@@ -458,13 +458,13 @@ R6
 r1
 !s85 0
 31
-!s108 1509025166.882000
+!s108 1509058716.049000
 !s107 C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/regfile_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/regfile_tb.v|
 !i113 1
 R10
 vRegister_file
-R0
+R12
 !i10b 1
 !s100 8?HAK3XBh7e^Eb<^PhBZO2
 IClMRF;?<UB_I]li=TLb8>0
@@ -478,14 +478,14 @@ R6
 r1
 !s85 0
 31
-!s108 1509025166.820000
+!s108 1509058715.924000
 !s107 C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/regfile.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/regfile.v|
 !i113 1
 R10
 n@register_file
 vshifter
-R0
+R33
 !i10b 1
 !s100 3aF=4K^3b``?:S8;cnj4>3
 I6biW54^KjA0mHJFEPfYF83
@@ -499,7 +499,7 @@ R6
 r1
 !s85 0
 31
-!s108 1509025166.929000
+!s108 1509058716.189000
 !s107 C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/shifter.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/shifter.v|
 !i113 1
@@ -519,49 +519,49 @@ R6
 r1
 !s85 0
 31
-!s108 1509025166.195000
+!s108 1509058714.530000
 !s107 C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/shifter_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/shifter_tb.v|
 !i113 1
 R10
 vsseg
-R0
+R12
 !i10b 1
 !s100 Oi0=VFj6KP]FR39b]7ADD2
 I7LhYe;XAfWKgCEZd]o5JJ0
 R1
 R2
-R23
 R24
 R25
+R26
 L0 104
 R6
 r1
 !s85 0
 31
-R26
 R27
 R28
+R29
 !i113 1
 R10
 vvDFF
-R0
+R12
 !i10b 1
 !s100 VhMlA[45LcS1YFUTFg;<I2
 I_`NlEQ[<^k?a?8Yg>]WEX2
 R1
 R2
-R23
 R24
 R25
+R26
 L0 87
 R6
 r1
 !s85 0
 31
-R26
 R27
 R28
+R29
 !i113 1
 R10
 nv@d@f@f
