@@ -7,6 +7,13 @@ Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
 Top level modules:
 	ALU
 
+} {} {}} {C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/datapath_tb.v} {1 {vlog -work work -stats=none {C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/datapath_tb.v}
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module datapath_tb
+
+Top level modules:
+	datapath_tb
+
 } {} {}} {C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/buildingblocks.v} {1 {vlog -work work -stats=none {C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/buildingblocks.v}
 Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
 -- Compiling module Load_enabled_register
@@ -21,15 +28,6 @@ Top level modules:
 	MUX_2in_binary
 	MUX_4in_binary
 	MUX_8in
-
-} {} {}} {C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/datapath_tb.v} {2 {vlog -work work -stats=none {C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/datapath_tb.v}
-Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
--- Compiling module datapath_tb
-** Warning: C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/datapath_tb.v(181): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-
-
-Top level modules:
-	datapath_tb
 
 } {} {}} {C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/regfile.v} {1 {vlog -work work -stats=none {C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/regfile.v}
 Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
