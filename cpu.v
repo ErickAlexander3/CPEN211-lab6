@@ -24,9 +24,9 @@ module cpu(clk,reset,s,load,in,out,N,V,Z,w);
 
   //4) Instantiate the datapath from lab5 (with its modifications)
   datapath DP(.clk(clk), //clock controlling datapath               
-                .readnum(readnum), .vsel(vsel), .loada(load), .loadb(loadb),  // register operand fetch stage               
+                .readnum(readnum), .vsel(vsel), .loada(loada), .loadb(loadb),  // register operand fetch stage               
                 .shift(shift), .asel(asel), .bsel(bsel), .ALUop(ALUop), .loadc(loadc), .loads(loads), .sximm5(sximm5), // computation stage (sometimes called "execute")
-                .writenum(writenum), .write(write), .sximm8(sximm8), .mdata(16'b0), .PC(16'b0), // set when "writing back" to register file               
+                .writenum(writenum), .write(write), .sximm8(sximm8), .mdata(16'b0), .PC(8'b0), // set when "writing back" to register file               
                 .status({V, N, Z}), .datapath_out(out) // outputs from datapath
               );endmodule
 
@@ -79,14 +79,14 @@ module Controller(clk, s, reset, opcode, op, w, loada, loadb, loadc, loads, asel
   wire [2:0] next_state_reset = reset ? `WAIT_STATE : next_state;
   reg [15:0] next;
 
-  vDFF clk_state(clk, next_state_reset, present_state);
+  vDFF #(3) clk_state(clk, next_state_reset, present_state);
 
   always @(*) begin
     casex({s, opcode, op, present_state})
       {6'b0xxxxx, `WAIT_STATE}: next = {`WAIT_STATE, 13'b1000000000000};  //if in WAIT and s is 0, then remain in WAIT and set w=1
       {6'b1xxxxx, `WAIT_STATE}: next = {`DECODE_STATE, 13'b1000000000000}; //if in WAIT and s is 1, then go to DECODE and set w=1
       //Now come initial states with different conditions depending on opcode and op
-      {6'bx11000, `DECODE_STATE}: next = {`WRITE_STATE, 13'b0}; //if in DECODE and operation is MOV Rn, then go to WRITE and output nothing 
+      {6'bx11010, `DECODE_STATE}: next = {`WRITE_STATE, 13'b0}; //if in DECODE and operation is MOV Rn, then go to WRITE and output nothing 
       {6'bx10101, `DECODE_STATE}, {6'bx101x0, `DECODE_STATE}: next = {`LOAD_A_STATE, 13'b0}; //if in DECODE and operation is CMP, ADD or AND, then go to LOAD_A and output nothing
       {6'bx11000, `DECODE_STATE}, {6'bx10111, `DECODE_STATE}: next = {`LOAD_B_STATE, 13'b0}; //if in DECODE and operation is MOV Rd Rm or MVN, then go to LOAD_B and output nothing 
       //the following are intermediate states, so the input only matters for the output
@@ -95,8 +95,8 @@ module Controller(clk, s, reset, opcode, op, w, loada, loadb, loadc, loads, asel
       {6'bx11000, `ALU_STATE}: next = {`WRITE_STATE, 13'b0001010000000}; //if in ALU and MOV Rd Rm operation, then next state is WRITE and set asel=1, bsel=0, loadc=1
       {6'bx10111, `ALU_STATE}, {6'bx101x0, `ALU_STATE}: next = {`WRITE_STATE, 13'b0001000000000}; //if in ALU and ALUop but not CMP, then next state is WRITE and set asel=bsel=0, loadc=1
       {6'bx10101, `ALU_STATE}: next = {`WAIT_STATE, 13'b0000100000000}; //if in ALU and CMP operation, then go to WAIT and output asel=bsel=0, loads=1
-      {6'bx11000, `WRITE_STATE}: next = {`WAIT_STATE, 13'b0000000100011}; //if in WRITE and Mov Rn, then go to WAIT and set nsel=001, vsel=10, write=1
-      {6'bxxxxxx, `WRITE_STATE}: next = {`WAIT_STATE, 13'b0001000000101}; //if in WRITE but not in MOV Rn, then same as before but set nsel=010, vsel=00, write=1
+      {6'bx11010, `WRITE_STATE}: next = {`WAIT_STATE, 13'b0000000100011}; //if in WRITE and Mov Rn, then go to WAIT and set nsel=001, vsel=10, write=1
+      {6'bxxxxxx, `WRITE_STATE}: next = {`WAIT_STATE, 13'b0000000000101}; //if in WRITE but not in MOV Rn, then same as before but set nsel=010, vsel=00, write=1
       default: next = {16{1'bx}};
    endcase
   end
