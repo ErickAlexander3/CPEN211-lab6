@@ -23,16 +23,17 @@
 module datapath_tb();
 	//testbench do not take inputs or outputs
 	//declare simulated inputs and outputs
-	reg sim_clk, sim_write, sim_asel, sim_bsel, sim_vsel, sim_loada, sim_loadb, sim_loadc, sim_loads, error;
+	reg sim_clk, sim_write, sim_asel, sim_bsel, sim_loada, sim_loadb, sim_loadc, sim_loads, error;
 	reg [2:0] sim_readnum, sim_writenum;
-	reg [1:0] sim_ALUop, sim_shift;
-	reg [15:0] sim_datapath_in;
-	wire sim_status;
+	reg [1:0] sim_ALUop, sim_shift, sim_vsel;
+	reg [15:0] sim_mdata, sim_sximm8, sim_sximm5;
+	reg [7:0] sim_PC;
+	wire [2:0] sim_status;
 	wire [15:0] sim_datapath_out;  
 
 	//instiate datapath as DUT
         //NOTE: CHANGE THIS TO SUPPORT NEW INPUTS
-	datapath DUT(sim_clk, sim_readnum, sim_vsel, sim_loada, sim_loadb, sim_shift, sim_asel, sim_bsel, sim_ALUop, sim_loadc, sim_loads, sim_writenum, sim_write, sim_datapath_in, sim_status, sim_datapath_out);
+	datapath DP(.clk(sim_clk), .readnum(sim_readnum), .vsel(sim_vsel), .loada(sim_loada), .loadb(sim_loadb), .shift(sim_shift), .asel(sim_asel), .bsel(sim_bsel), .ALUop(sim_ALUop), .loadc(sim_loadc), .loads(sim_loads), .writenum(sim_writenum), .write(sim_write), .mdata(sim_mdata), .sximm8(sim_sximm8), .sximm5(sim_sximm5), .PC(sim_PC), .status(sim_status), .datapath_out(sim_datapath_out));
 
         //Generate a rising edge every 10 seconds starting from second 5
         initial begin
@@ -49,17 +50,17 @@ module datapath_tb();
           input [15:0] value;  //value to write in the specified address
         begin
           $display("Setting the register at %b with the value %h", register_address, value);
-          sim_datapath_in = value;
+          sim_sximm8 = value; //we want to read the sign extended 16 bit input
           sim_writenum = register_address;
           sim_readnum = register_address; //this is only done for testing and is not required for the task
-          sim_vsel = 1'b1; //select the datapath_in
+          sim_vsel = 2'b10; //select the sximm8
           sim_write = 1'b1; //we want to write to the register
                        
 	  #10; //wait 1 cycle
 
           //check if the register has the value saved in the address          
-          if( DUT.register_block.data_out !== value ) begin
-            $display("ERROR ** the register has a value of %b, expected %b", DUT.register_block.data_out, value);
+          if( DP.REGFILE.data_out !== value ) begin
+            $display("ERROR ** the register has a value of %b, expected %b", DP.REGFILE.data_out, value);
             error = 1'b1;
           end
         end
@@ -71,6 +72,7 @@ module datapath_tb();
           input [1:0] alu_operation;
           input [1:0] shifting_operation;
           input [15:0] expected_result;
+	  input [2:0] expected_status;
         begin
           //reading values from register and store in A and B respectively
           $display("Adding the values from %b and %b, with the shifting operation %b, and storing it in %b",
@@ -99,23 +101,52 @@ module datapath_tb();
 
 	  #10; //wait 1 cycle
 
+	  //check if the resulting output is as expected
           if( expected_result == sim_datapath_out ) begin
-            $display("The result was %h as expected", sim_datapath_out);
+            $display("The result was %b as expected", sim_datapath_out);
           end else begin
-            $display("The result was %h, but the expected result was %h", sim_datapath_out, expected_result);
+            $display("The result was %b, but the expected result was %b", sim_datapath_out, expected_result);
             error = 1'b1;
           end
+
+	  //check if the resulting status is as expected
+	  if( expected_status == sim_status) begin
+	     $display("The status was %h as expected", sim_status);
+	  end else begin //if result is not as expected, checkwhich bit is not correct
+	     if (expected_status[2] != sim_status[2]) begin
+		case(expected_status[2])
+			0: $display("The result should not have overflown but indicates it is");
+			1: $display("The result should have overflown but indicates it is not ");
+			default: $display("error assigning status");
+		endcase
+	     end
+	     if(expected_status[1] != sim_status[1]) begin
+		case(expected_status[1])
+			0: $display("The result should not be negative but indicates it is");
+			1: $display("The result should be negative but indicates it is not ");
+			default: $display("error assigning status");
+		endcase
+	     end
+	     if(expected_status[0] != sim_status[0]) begin
+		case(expected_status[0])
+			0: $display("The result should not be 0 but indicates it is");
+			1: $display("The result should be 0 but indicates it is not ");
+			default: $display("error assigning status");
+		endcase
+	     end
+	     error = 1'b1;
+	   end
           
           //store the result in the given register
           sim_writenum = register_address;
           sim_readnum = register_address; //just to be able to read it for the test
-          sim_vsel = 1'b0; //we want to store the result of loadc instead of datapath_in
+          sim_vsel = 2'b00; //we want to store the result of loadc instead of datapath_in
           sim_write = 1'b1;
 
           #10; //wait 1 cycle
           //check if the register has the value saved in the address          
-          if( DUT.register_block.data_out !== sim_datapath_out ) begin
-            $display("ERROR ** the register has a value of %b, expected %b", DUT.register_block.data_out, sim_datapath_out);
+          if( DP.REGFILE.data_out !== sim_datapath_out ) begin
+            $display("ERROR ** the register has a value of %b, expected %b", DP.REGFILE.data_out, sim_datapath_out);
             error = 1'b1;
           end
         end
@@ -125,22 +156,33 @@ module datapath_tb();
                 //try adding two values with shifting
                 MOV(`R0, 16'h7); //7 into register R0
                 MOV(`R1, 16'h2); //2 into register R1
-                OPERATION(`R2, `R1, `R0, `SUM, `SHIFT_LEFT, 16'h10); //2 + E(7 shifted to the left) = 10 into register R2
+                OPERATION(`R2, `R1, `R0, `SUM, `SHIFT_LEFT, 16'h10, 3'b000); //2 + E(7 shifted to the left) = 10 into register R2
 
  		//try adding two values without shifting
                 MOV(`R3, 16'h42); //42 into register R3
                 MOV(`R4, 16'h13); //13 into register R4
-                OPERATION(`R5, `R4, `R3, `SUM,`UNCHANGED, 16'h55); //42 + 13 = 55 into register R5
+                OPERATION(`R5, `R4, `R3, `SUM,`UNCHANGED, 16'h55, 3'b000); //42 + 13 = 55 into register R5
 
                 //try substracting previous results and save them in a previously used register
-                OPERATION(`R0, `R5, `R2, `SUB,`UNCHANGED, 16'h45); //55 - 10 = 45 into register R0
+                OPERATION(`R0, `R5, `R2, `SUB,`UNCHANGED, 16'h45, 3'b000); //55 - 10 = 45 into register R0
 
                 //and now try adding 5 to that result
                 MOV(`R1, 16'h5);
-                OPERATION(`R2, `R0, `R1, `SUM,`UNCHANGED, 16'h4A); //45 + 5 = 4A into register R2
+                OPERATION(`R2, `R0, `R1, `SUM,`UNCHANGED, 16'h4A, 3'b000); //45 + 5 = 4A into register R2
+
+		//test when result is negative
+		OPERATION(`R6, `R0, `R0, `SUB, `SHIFT_LEFT, 16'hffbb, 3'b010); //(45 - 90) is negative
+
+		//test when result is 0
+		OPERATION(`R7, `R3, `R3, `SUB, `UNCHANGED, 16'h0, 3'b001); //(45 - 90) is negative
+
+		//test when there is overflow
+		MOV(`R7, 16'b1000000000000001);
+		OPERATION(`R0, `R7, `R7, `SUM, `UNCHANGED, 16'b00000000000000010, 3'b100); //value can't be stored in 16 bits
 
                 if(!error) $display("ALL TESTS PASSED");
 		$stop; //break out
 		
 	end
 endmodule
+

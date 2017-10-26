@@ -9,23 +9,23 @@ z2
 cModel Technology
 dC:/Users/alexlee/CPEN 211 Labs/lab 4
 vALU
-Z0 !s110 1508751616
+Z0 !s110 1509002603
 !i10b 1
 !s100 SBMnfR`cIJUe9TT_?aN=81
-IgD=TW^SLQD><KF]MHP3zO2
+IVi4R7C1;AgRae@8a3>g<o1
 Z1 V`JN@9S9cnhjKRR_L]QIcM3
-Z2 dC:/Users/erick/OneDrive/Documentos/UBC-DESKTOP-0RSMUVL/CPEN 211/lab6
-Z3 w1508740139
-Z4 8C:/Users/erick/OneDrive/Documentos/UBC-DESKTOP-0RSMUVL/CPEN 211/lab6/ALU.v
-Z5 FC:/Users/erick/OneDrive/Documentos/UBC-DESKTOP-0RSMUVL/CPEN 211/lab6/ALU.v
+Z2 dC:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6
+Z3 w1508915412
+Z4 8C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/ALU.v
+Z5 FC:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/ALU.v
 L0 9
 Z6 OV;L;10.3d;59
 r1
 !s85 0
 31
-Z7 !s108 1508751616.749000
-Z8 !s107 C:/Users/erick/OneDrive/Documentos/UBC-DESKTOP-0RSMUVL/CPEN 211/lab6/ALU.v|
-Z9 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/erick/OneDrive/Documentos/UBC-DESKTOP-0RSMUVL/CPEN 211/lab6/ALU.v|
+Z7 !s108 1509002603.510000
+Z8 !s107 C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/ALU.v|
+Z9 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/ALU.v|
 !i113 1
 Z10 o-work work
 n@a@l@u
@@ -33,7 +33,7 @@ vALU_result
 R0
 !i10b 1
 !s100 5DMY@6=AAKo=;C^n6o<Mj1
-IBE@QhXQ5VXnJ^?;TFT75P2
+ICjAOiTjP_hi5cU;ZU3oFN3
 R1
 R2
 R3
@@ -54,7 +54,7 @@ vALU_status
 R0
 !i10b 1
 !s100 A3Z=gHiiG0hmk9cWG566^2
-IkZPSlJV6NO`MLc^iiTJ522
+I0ZAOY`FUGQ8i2DjA`MGDn0
 R1
 R2
 R3
@@ -75,41 +75,41 @@ vALU_tb
 R0
 !i10b 1
 !s100 jmO`_U_0Zin0mZUf?Sj`<1
-Il6;mKao4VABZ5mPKYYHlh3
+IK`@jPHQLVT:XH99ojK3[e2
 R1
 R2
-w1507860723
-8C:/Users/erick/OneDrive/Documentos/UBC-DESKTOP-0RSMUVL/CPEN 211/lab6/ALU_tb.v
-FC:/Users/erick/OneDrive/Documentos/UBC-DESKTOP-0RSMUVL/CPEN 211/lab6/ALU_tb.v
+R3
+8C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/ALU_tb.v
+FC:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/ALU_tb.v
 L0 2
 R6
 r1
 !s85 0
 31
-!s108 1508751616.858000
-!s107 C:/Users/erick/OneDrive/Documentos/UBC-DESKTOP-0RSMUVL/CPEN 211/lab6/ALU_tb.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/erick/OneDrive/Documentos/UBC-DESKTOP-0RSMUVL/CPEN 211/lab6/ALU_tb.v|
+!s108 1509002603.572000
+!s107 C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/ALU_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/ALU_tb.v|
 !i113 1
 R10
 n@a@l@u_tb
 vController
-Z12 !s110 1508751617
+R0
 !i10b 1
 !s100 L=3AC[C1d`a_]kzle^cC@2
-I2=KHNLO6=l:a`YB^NXeMV3
+IPZMmQKgza^2J0iO<DJNBH3
 R1
 R2
-w1508751617
-Z13 8C:/Users/erick/OneDrive/Documentos/UBC-DESKTOP-0RSMUVL/CPEN 211/lab6/cpu.v
-Z14 FC:/Users/erick/OneDrive/Documentos/UBC-DESKTOP-0RSMUVL/CPEN 211/lab6/cpu.v
+w1509002603
+8C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/cpu.v
+FC:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/cpu.v
 L0 58
 R6
 r1
 !s85 0
 31
-!s108 1508751617.686000
-!s107 C:/Users/erick/OneDrive/Documentos/UBC-DESKTOP-0RSMUVL/CPEN 211/lab6/cpu.v|
-Z15 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/erick/OneDrive/Documentos/UBC-DESKTOP-0RSMUVL/CPEN 211/lab6/cpu.v|
+!s108 1509002603.697000
+!s107 C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/cpu.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/cpu.v|
 !i113 1
 R10
 n@controller
@@ -119,10 +119,10 @@ vcpu
 !s100 86<6HM;OCkXEN;Y=aDcR70
 I9<gDUHWRoQj]VnWJ_3^Q60
 R1
-R2
+Z12 dC:/Users/erick/OneDrive/Documentos/UBC-DESKTOP-0RSMUVL/CPEN 211/lab6
 w1508741593
-R13
-R14
+8C:/Users/erick/OneDrive/Documentos/UBC-DESKTOP-0RSMUVL/CPEN 211/lab6/cpu.v
+FC:/Users/erick/OneDrive/Documentos/UBC-DESKTOP-0RSMUVL/CPEN 211/lab6/cpu.v
 L0 1
 R6
 r1
@@ -130,97 +130,97 @@ r1
 31
 !s108 1508748140.788000
 !s107 C:/Users/erick/OneDrive/Documentos/UBC-DESKTOP-0RSMUVL/CPEN 211/lab6/cpu.v|
-R15
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/erick/OneDrive/Documentos/UBC-DESKTOP-0RSMUVL/CPEN 211/lab6/cpu.v|
 !i113 1
 R10
 vdatapath
-R12
+Z13 !s110 1509002604
 !i10b 1
-!s100 _0f@B4I2105RiV`mBif?W1
-IKjoi9A^@0l><T8m4kKjgT2
+!s100 CM8?ekTg<Uan]m7;njInU1
+IkFF;CCF=5T0YTc_?eIoGL1
 R1
 R2
-w1508738876
-8C:\Users\erick\OneDrive\Documentos\UBC-DESKTOP-0RSMUVL\CPEN 211\lab6\datapath.v
-FC:\Users\erick\OneDrive\Documentos\UBC-DESKTOP-0RSMUVL\CPEN 211\lab6\datapath.v
+w1508996104
+8C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/datapath.v
+FC:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/datapath.v
 L0 1
 R6
 r1
 !s85 0
 31
-!s108 1508751617.077000
-!s107 C:\Users\erick\OneDrive\Documentos\UBC-DESKTOP-0RSMUVL\CPEN 211\lab6\datapath.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:\Users\erick\OneDrive\Documentos\UBC-DESKTOP-0RSMUVL\CPEN 211\lab6\datapath.v|
+!s108 1509002604.104000
+!s107 C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/datapath.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/datapath.v|
 !i113 1
 R10
 vdatapath_tb
-R12
+R0
 !i10b 1
-!s100 1^V@mc_5R_nlO3FESKI:J1
-Ifm2fE=SCl[8]gHL5_EJm70
+!s100 k[>UFBP?DRDk>kDP@GTcW1
+Inc5O_X>BJia0N3lCA>a2?2
 R1
 R2
-w1508738369
-8C:/Users/erick/OneDrive/Documentos/UBC-DESKTOP-0RSMUVL/CPEN 211/lab6/datapath_tb.v
-FC:/Users/erick/OneDrive/Documentos/UBC-DESKTOP-0RSMUVL/CPEN 211/lab6/datapath_tb.v
+w1508996595
+8C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/datapath_tb.v
+FC:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/datapath_tb.v
 L0 23
 R6
 r1
 !s85 0
 31
-!s108 1508751617.171000
-!s107 C:/Users/erick/OneDrive/Documentos/UBC-DESKTOP-0RSMUVL/CPEN 211/lab6/datapath_tb.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/erick/OneDrive/Documentos/UBC-DESKTOP-0RSMUVL/CPEN 211/lab6/datapath_tb.v|
+!s108 1509002603.744000
+!s107 C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/datapath_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/datapath_tb.v|
 !i113 1
 R10
 vDecoder
 R0
 !i10b 1
 !s100 7OJEeB4ODa7IFbN@?MVb:1
-INo]Oe7lEKzIY3770MjSNX1
+I_;_`5?J_eE;`HCCN::Q_Z1
 R1
 R2
-Z16 w1508737464
-Z17 8C:/Users/erick/OneDrive/Documentos/UBC-DESKTOP-0RSMUVL/CPEN 211/lab6/buildingblocks.v
-Z18 FC:/Users/erick/OneDrive/Documentos/UBC-DESKTOP-0RSMUVL/CPEN 211/lab6/buildingblocks.v
+R3
+Z14 8C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/buildingblocks.v
+Z15 FC:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/buildingblocks.v
 L0 22
 R6
 r1
 !s85 0
 31
-Z19 !s108 1508751616.968000
-Z20 !s107 C:/Users/erick/OneDrive/Documentos/UBC-DESKTOP-0RSMUVL/CPEN 211/lab6/buildingblocks.v|
-Z21 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/erick/OneDrive/Documentos/UBC-DESKTOP-0RSMUVL/CPEN 211/lab6/buildingblocks.v|
+Z16 !s108 1509002603.635000
+Z17 !s107 C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/buildingblocks.v|
+Z18 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/buildingblocks.v|
 !i113 1
 R10
 n@decoder
 vinput_iface
-R12
+R0
 !i10b 1
 !s100 8SgM@8TG_;?zeKCKSLm2H1
-Imcdj:>]_AcD7a=K^0o4401
+IzmIn9VO<mWSJZ5Vm5SDTZ1
 R1
 R2
-Z22 w1508744430
-Z23 8C:/Users/erick/OneDrive/Documentos/UBC-DESKTOP-0RSMUVL/CPEN 211/lab6/lab6_top.v
-Z24 FC:/Users/erick/OneDrive/Documentos/UBC-DESKTOP-0RSMUVL/CPEN 211/lab6/lab6_top.v
+Z19 w1508996594
+Z20 8C:\Users\alexlee\CPEN 211 Labs\CPEN211-lab6\lab6_top.v
+Z21 FC:\Users\alexlee\CPEN 211 Labs\CPEN211-lab6\lab6_top.v
 L0 76
 R6
 r1
 !s85 0
 31
-Z25 !s108 1508751617.280000
-Z26 !s107 C:/Users/erick/OneDrive/Documentos/UBC-DESKTOP-0RSMUVL/CPEN 211/lab6/lab6_top.v|
-Z27 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/erick/OneDrive/Documentos/UBC-DESKTOP-0RSMUVL/CPEN 211/lab6/lab6_top.v|
+Z22 !s108 1509002603.822000
+Z23 !s107 C:\Users\alexlee\CPEN 211 Labs\CPEN211-lab6\lab6_top.v|
+Z24 !s90 -reportprogress|300|-work|work|-stats=none|C:\Users\alexlee\CPEN 211 Labs\CPEN211-lab6\lab6_top.v|
 !i113 1
 R10
 vlab5_top
-Z28 !s110 1508735829
+Z25 !s110 1508735829
 !i10b 1
 !s100 =j:FgMjCHK1iYD^BjBJzX3
 IdoEOhIGU3QAU0L4`:Y1EM0
 R1
-R2
+R12
 w1507608202
 8C:/Users/erick/OneDrive/Documentos/UBC-DESKTOP-0RSMUVL/CPEN 211/lab5/lab5_top.v
 FC:/Users/erick/OneDrive/Documentos/UBC-DESKTOP-0RSMUVL/CPEN 211/lab5/lab5_top.v
@@ -236,14 +236,14 @@ r1
 R10
 vlab5_top_tb
 DXx6 sv_std 3 std 0 22 <EOTafDcUY:cQeO^ICn]m3
-R28
+R25
 !i10b 1
 !s100 njANKBKND3d;G78dZb`0Y1
 I9UZc:QC7l_9[fIXAEfH6W0
 R1
 !s105 lab5_top_tb_sv_unit
 S1
-R2
+R12
 w1507594885
 8C:/Users/erick/OneDrive/Documentos/UBC-DESKTOP-0RSMUVL/CPEN 211/lab5/lab5_top_tb.sv
 FC:/Users/erick/OneDrive/Documentos/UBC-DESKTOP-0RSMUVL/CPEN 211/lab5/lab5_top_tb.sv
@@ -258,43 +258,43 @@ r1
 !i113 1
 o-work work -sv
 vlab6_top
-R12
+R0
 !i10b 1
 !s100 6`1F>SmZ`NQ>?FGgGnkdL1
-IEbT7fDeShlG;UaG6SV3K?1
+IaWoCNX9@lIgCWAj3AK:H40
 R1
 R2
-R22
-R23
-R24
+R19
+R20
+R21
 R11
 R6
 r1
 !s85 0
 31
-R25
-R26
-R27
+R22
+R23
+R24
 !i113 1
 R10
 vLoad_enabled_register
 R0
 !i10b 1
 !s100 aPo0a]`G1Y>Qo7]i1Uo780
-I^S;h8[iPGe1zIk58iIQ]d1
+IBjBY=9coR1UB=78eXikPC1
 R1
 R2
-R16
-R17
-R18
+R3
+R14
+R15
 L0 3
 R6
 r1
 !s85 0
 31
-R19
-R20
-R21
+R16
+R17
+R18
 !i113 1
 R10
 n@load_enabled_register
@@ -323,20 +323,20 @@ vMUX_2in_binary
 R0
 !i10b 1
 !s100 =F;z?hX2GgoDP9OYW41eP3
-IGL?mME[`V>BeQX@VVQ?481
+IDhjb92V^^@G@NOiJ]T<ed1
 R1
 R2
-R16
-R17
-R18
+R3
+R14
+R15
 L0 35
 R6
 r1
 !s85 0
 31
-R19
-R20
-R21
+R16
+R17
+R18
 !i113 1
 R10
 n@m@u@x_2in_binary
@@ -344,20 +344,20 @@ vMUX_4in_binary
 R0
 !i10b 1
 !s100 :Y>7]BceOeQHGWHVdzM>=0
-I5maTo9n1>BLU;[_6_nPb?1
+IF7TJ<mB;?kg9S6HoQbE[[1
 R1
 R2
-R16
-R17
-R18
+R3
+R14
+R15
 L0 52
 R6
 r1
 !s85 0
 31
-R19
-R20
-R21
+R16
+R17
+R18
 !i113 1
 R10
 n@m@u@x_4in_binary
@@ -365,142 +365,142 @@ vMUX_8in
 R0
 !i10b 1
 !s100 A@eYHE_BY9Lz?TVLZOXej2
-IY=zm<j=]9S@@O7ZiIPz[B0
+IRD:NHa_9N>3RIPcb7O_SZ3
 R1
 R2
-R16
-R17
-R18
+R3
+R14
+R15
 L0 73
 R6
 r1
 !s85 0
 31
-R19
-R20
-R21
+R16
+R17
+R18
 !i113 1
 R10
 n@m@u@x_8in
 vregfile_tb
-R12
+R0
 !i10b 1
 !s100 TgG8Ln2iSX8TlcN4QYOR?0
-IbhdmK6IG=H0NgzNSA[4]m1
+IbX6Nk[PgJ8Qd9bRIRWWRd2
 R1
 R2
-w1508747804
-8C:\Users\erick\OneDrive\Documentos\UBC-DESKTOP-0RSMUVL\CPEN 211\lab6\regfile_tb.v
-FC:\Users\erick\OneDrive\Documentos\UBC-DESKTOP-0RSMUVL\CPEN 211\lab6\regfile_tb.v
+R3
+8C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/regfile_tb.v
+FC:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/regfile_tb.v
 L0 2
 R6
 r1
 !s85 0
 31
-!s108 1508751617.514000
-!s107 C:\Users\erick\OneDrive\Documentos\UBC-DESKTOP-0RSMUVL\CPEN 211\lab6\regfile_tb.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:\Users\erick\OneDrive\Documentos\UBC-DESKTOP-0RSMUVL\CPEN 211\lab6\regfile_tb.v|
+!s108 1509002603.947000
+!s107 C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/regfile_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/regfile_tb.v|
 !i113 1
 R10
 vRegister_file
-R12
+R0
 !i10b 1
-!s100 _>gckiN5Gz2U;c^L33I]D0
-I9`aRa;F53V@`Sf>z=hRm<3
+!s100 8?HAK3XBh7e^Eb<^PhBZO2
+IClMRF;?<UB_I]li=TLb8>0
 R1
 R2
-w1507810020
-8C:/Users/erick/OneDrive/Documentos/UBC-DESKTOP-0RSMUVL/CPEN 211/lab6/regfile.v
-FC:/Users/erick/OneDrive/Documentos/UBC-DESKTOP-0RSMUVL/CPEN 211/lab6/regfile.v
+w1508999892
+8C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/regfile.v
+FC:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/regfile.v
 L0 2
 R6
 r1
 !s85 0
 31
-!s108 1508751617.389000
-!s107 C:/Users/erick/OneDrive/Documentos/UBC-DESKTOP-0RSMUVL/CPEN 211/lab6/regfile.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/erick/OneDrive/Documentos/UBC-DESKTOP-0RSMUVL/CPEN 211/lab6/regfile.v|
+!s108 1509002603.885000
+!s107 C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/regfile.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/regfile.v|
 !i113 1
 R10
 n@register_file
 vshifter
-R12
+R13
 !i10b 1
 !s100 3aF=4K^3b``?:S8;cnj4>3
-I]a1hkFQ1FEI9JBQcYLJGl1
+I6biW54^KjA0mHJFEPfYF83
 R1
 R2
-w1507809739
-8C:/Users/erick/OneDrive/Documentos/UBC-DESKTOP-0RSMUVL/CPEN 211/lab6/shifter.v
-FC:/Users/erick/OneDrive/Documentos/UBC-DESKTOP-0RSMUVL/CPEN 211/lab6/shifter.v
+R3
+8C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/shifter.v
+FC:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/shifter.v
 L0 8
 R6
 r1
 !s85 0
 31
-!s108 1508751617.608000
-!s107 C:/Users/erick/OneDrive/Documentos/UBC-DESKTOP-0RSMUVL/CPEN 211/lab6/shifter.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/erick/OneDrive/Documentos/UBC-DESKTOP-0RSMUVL/CPEN 211/lab6/shifter.v|
+!s108 1509002604.010000
+!s107 C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/shifter.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/shifter.v|
 !i113 1
 R10
 vshifter_tb
 R0
 !i10b 1
 !s100 TkT?n15hO_<U[aKoR4R6=1
-IjL1fhDR`<1NmgHW0n^>e40
+IN<oEYmDjQa5W?GWf<7nWB0
 R1
 R2
-w1508748025
-8C:\Users\erick\OneDrive\Documentos\UBC-DESKTOP-0RSMUVL\CPEN 211\lab6\shifter_tb.v
-FC:\Users\erick\OneDrive\Documentos\UBC-DESKTOP-0RSMUVL\CPEN 211\lab6\shifter_tb.v
+R3
+8C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/shifter_tb.v
+FC:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/shifter_tb.v
 L0 1
 R6
 r1
 !s85 0
 31
-!s108 1508751616.624000
-!s107 C:\Users\erick\OneDrive\Documentos\UBC-DESKTOP-0RSMUVL\CPEN 211\lab6\shifter_tb.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:\Users\erick\OneDrive\Documentos\UBC-DESKTOP-0RSMUVL\CPEN 211\lab6\shifter_tb.v|
+!s108 1509002603.447000
+!s107 C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/shifter_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/alexlee/CPEN 211 Labs/CPEN211-lab6/shifter_tb.v|
 !i113 1
 R10
 vsseg
-R12
+R0
 !i10b 1
 !s100 Oi0=VFj6KP]FR39b]7ADD2
-I]<PENl1AHD1dWEQGClb=J2
+IFH<akWVCV4ni[mWZB^;QY1
 R1
 R2
-R22
-R23
-R24
+R19
+R20
+R21
 L0 104
 R6
 r1
 !s85 0
 31
-R25
-R26
-R27
-!i113 1
-R10
-vvDFF
-R12
-!i10b 1
-!s100 VhMlA[45LcS1YFUTFg;<I2
-I`SbBJ0[h7bWMdnFW@f:4f0
-R1
-R2
 R22
 R23
 R24
+!i113 1
+R10
+vvDFF
+R0
+!i10b 1
+!s100 VhMlA[45LcS1YFUTFg;<I2
+Ic50KT:87>JXbJ;X9iSLNM2
+R1
+R2
+R19
+R20
+R21
 L0 87
 R6
 r1
 !s85 0
 31
-R25
-R26
-R27
+R22
+R23
+R24
 !i113 1
 R10
 nv@d@f@f

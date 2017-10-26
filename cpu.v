@@ -21,7 +21,7 @@ module cpu(clk,reset,s,load,in,out,N,V,Z,w);
   Controller datapath_controller();
 
   //4) Instantiate the datapath from lab5 (with its modifications)
-  datapath data_path(.clk(clk), //clock controlling datapath               
+  datapath DP(.clk(clk), //clock controlling datapath               
                 readnum, vsel, loada, loadb,  // register operand fetch stage               
                 shift, asel, bsel, ALUop, loadc, loads, sximm5, // computation stage (sometimes called "execute")
                 writenum, write, sximm8, .mdata(16'b0), .PC(16'b0), // set when "writing back" to register file               
